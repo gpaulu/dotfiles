@@ -41,7 +41,7 @@
 
 [core]
 	editor = code --wait --new-window
-	excludesfile = /home/gpaulu/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [fetch]
 	prune = true
 [merge]
