@@ -1,3 +1,5 @@
+[core]
+	editor = code --wait --new-window
 [merge]
 	tool = kdiff3
 [mergetool "kdiff3"]

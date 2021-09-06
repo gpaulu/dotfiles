@@ -40,7 +40,6 @@
 	clonewin = clone --config core.autocrlf=true
 
 [core]
-	editor = code --wait --new-window
 	excludesfile = ~/.gitignore_global
 [fetch]
 	prune = true
