@@ -44,14 +44,5 @@
 	excludesfile = ~/.gitignore_global
 [fetch]
 	prune = true
-[merge]
-	tool = kdiff3
-[mergetool "kdiff3"]
-	path = /mnt/c/Program Files/KDiff3/kdiff3.exe
-	trustExitCode = false
-[diff]
-	guitool = kdiff3
-[difftool "kdiff3"]
-	path = /mnt/c/Program Files/KDiff3/kdiff3.exe
-	trustExitCode = false
-	cmd = kdiff3.exe \\\"`wslpath -w $LOCAL`\\\" \\\"`wslpath -w $REMOTE`\\\"
+[include]
+	path = .gitconfig.local
