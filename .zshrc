@@ -81,6 +81,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
   git
   fzf
+  fzf-tab
   zsh-syntax-highlighting
   zsh-autosuggestions
   k
