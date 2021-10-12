@@ -11,7 +11,7 @@ then
         sudo apt install zsh -y
     elif command -v zypper &> /dev/null
     then
-        sudo zypper install zsh -y
+        sudo zypper install -y zsh
     fi
 
     chsh -s $(which zsh)
@@ -25,7 +25,7 @@ then
         sudo apt install fzf -y
     elif command -v zypper &> /dev/null
     then
-        sudo zypper install fzf -y
+        sudo zypper install -y fzf
     fi
 fi
 
@@ -37,7 +37,7 @@ then
         sudo apt install keychain -y
     elif command -v zypper &> /dev/null
     then
-        sudo zypper install keychain -y
+        sudo zypper install -y keychain
     fi
 fi
 
