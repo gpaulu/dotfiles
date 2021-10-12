@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 
+RUN_ZSH=false
+
 if ! command -v zsh &> /dev/null
 then
+    RUN_ZSH=true
     if command -v apt &> /dev/null
     then
         sudo apt update
@@ -46,4 +49,9 @@ fi
 if [ ! -d ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k ]
 then
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+fi
+
+if RUN_ZSH
+then
+    exec zsh -l
 fi
