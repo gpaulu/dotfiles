@@ -26,6 +26,7 @@ then
     elif command -v zypper &> /dev/null
     then
         sudo zypper install -y fzf
+        sudo zypper install -y fzf-zsh-completion
     fi
 fi
 
