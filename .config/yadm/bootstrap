@@ -12,6 +12,9 @@ then
     elif command -v zypper &> /dev/null
     then
         sudo zypper install -y zsh
+    elif command -v pacman &> /dev/null
+    then
+        sudo pacman --noconfirm -S zsh
     fi
 
     chsh -s $(which zsh)
@@ -27,6 +30,9 @@ then
     then
         sudo zypper install -y fzf
         sudo zypper install -y fzf-zsh-completion
+    elif command -v pacman &> /dev/null
+    then
+        sudo pacman --noconfirm -S fzf
     fi
 fi
 
@@ -39,6 +45,9 @@ then
     elif command -v zypper &> /dev/null
     then
         sudo zypper install -y keychain
+    elif command -v pacman &> /dev/null
+    then
+        sudo pacman --noconfirm -S keychain
     fi
 fi
 
