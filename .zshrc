@@ -85,7 +85,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   k
-  cargo
+  rust
 )
 
 source $ZSH/oh-my-zsh.sh
